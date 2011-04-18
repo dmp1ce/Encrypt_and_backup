@@ -13,8 +13,8 @@ if [ "$?" -ne "0" ]; then
   exit $?;
 fi
 
-echo "Backing up $NOW on Dropbox."
-cp wallet.dat-$NOW.7z /home/david/Dropbox/bitcoin/Elephant
+echo "Backing up wallet.dat-$NOW on Dropbox."
+cp wallet.dat-$NOW.7z /your/backup/direcotry/in/Dropbox
 
-echo "Removing plain text wallet.dat."
-rm wallet.dat
+#echo "Removing unencrypted wallet.dat."
+#rm wallet.dat
